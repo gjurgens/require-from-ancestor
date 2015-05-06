@@ -4,7 +4,7 @@
   "description": "Module to require rependencies using deepest ancestor cached instance",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "node node_modules/grunt/lib/grunt.js test"
   },
   "repository": {
     "type": "git",
