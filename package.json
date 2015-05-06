@@ -1,6 +1,6 @@
 {
   "name": "require-from-ancestor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Module to require rependencies using deepest ancestor cached instance",
   "main": "index.js",
   "scripts": {
@@ -24,11 +24,11 @@
   "homepage": "https://github.com/gjurgens/require-from-ancestor",
   "devDependencies": {
     "grunt": "",
-    "grunt-contrib-watch":"",
-    "grunt-contrib-jshint":"",
-    "grunt-mocha-test":"",
-    "chai":"",
-    "blanket":""
+    "grunt-contrib-watch": "",
+    "grunt-contrib-jshint": "",
+    "grunt-mocha-test": "",
+    "chai": "",
+    "blanket": ""
   },
   "engines": {
     "node": ">= 0.10.0"
