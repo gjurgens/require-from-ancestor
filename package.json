@@ -4,7 +4,7 @@
   "description": "Module to require rependencies using deepest ancestor cached instance",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/grunt/lib/grunt.js test"
+    "test": "node node_modules/grunt/bin/grunt test"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,8 @@
     "grunt-contrib-jshint": "",
     "grunt-mocha-test": "",
     "chai": "",
-    "blanket": ""
+    "blanket": "",
+    "mocha":"2.5.3"
   },
   "engines": {
     "node": ">= 0.10.0"
