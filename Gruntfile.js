@@ -37,11 +37,22 @@ module.exports = function(grunt) {
                 src: ["test/**/*.js"]
             }
         },
+        copy: {
+            fixtures: {
+                files: [{
+                    expand: true,
+                    cwd: 'test/fixtures/node_modules/',
+                    src: [
+                        "**"
+                    ],
+                    dest: "node_modules/"
+                }]
+            }
+        },
         mochaTest: {
             test: {
                 options: {
                     reporter: 'spec',
-                    clearRequireCache: 'true',
                     timeout: 1000
                 },
                 src: ['test/specs/**/*.js']
@@ -50,10 +61,11 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks('grunt-mocha-test');
 
     grunt.registerTask("default", ["watch"]);
-    grunt.registerTask("test", ["jshint", "mochaTest"]);
+    grunt.registerTask("test", ["jshint", "copy", "mochaTest"]);
 };
