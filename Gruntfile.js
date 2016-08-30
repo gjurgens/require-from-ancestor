@@ -41,16 +41,7 @@ module.exports = function(grunt) {
             test: {
                 options: {
                     reporter: 'spec',
-                    require: 'test/lib/blanket',
                     timeout: 1000
-                },
-                src: ['test/specs/**/*.js']
-            },
-            coverage: {
-                options: {
-                    reporter: 'html-cov',
-                    quiet: true,
-                    captureFile: 'coverage/index.html'
                 },
                 src: ['test/specs/**/*.js']
             }
