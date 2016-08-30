@@ -29,7 +29,7 @@
     "grunt-mocha-test": "",
     "chai": "",
     "blanket": "",
-    "mocha": "2.5.3"
+    "mocha": "1.20.0"
   },
   "engines": {
     "node": ">= 0.10.0"
