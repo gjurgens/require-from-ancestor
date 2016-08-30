@@ -1,6 +1,6 @@
 {
   "name": "require-from-ancestor",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Module to require rependencies using deepest ancestor cached instance",
   "main": "index.js",
   "scripts": {
