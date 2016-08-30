@@ -1,6 +1,6 @@
 {
   "name": "require-from-ancestor",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Module to require rependencies using deepest ancestor cached instance",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "grunt-mocha-test": "",
     "chai": "",
     "blanket": "",
-    "mocha":"2.5.3"
+    "mocha": "2.5.3"
   },
   "engines": {
     "node": ">= 0.10.0"
